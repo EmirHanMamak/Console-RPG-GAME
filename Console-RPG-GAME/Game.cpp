@@ -10,15 +10,15 @@ Game::~Game() {
 		
 }
 void Game::mainMenu() {
-	cout << "MAIN MENU\n " << endl;
-	cout << "0: Quit " << endl;
-	cout << "1: Travel " << endl;
-	cout << "2: Shop " << endl;
-	cout << "3: Level Up " << endl;
-	cout << "4: Rest " << endl;
-	cout << "Choice : ";
+	std::cout << "MAIN MENU\n " << std::endl;
+	std::cout << "0: Quit " << std::endl;
+	std::cout << "1: Travel " << std::endl;
+	std::cout << "2: Shop " << std::endl;
+	std::cout << "3: Level Up " << std::endl;
+	std::cout << "4: Rest " << std::endl;
+	std::cout << "Choice : ";
 
-	cin >> choice;
+	std::cin >> choice;
 	switch (choice)
 	{
 	case 0:
