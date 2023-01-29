@@ -1,7 +1,12 @@
-#include <iostream>
 
-using namespace std;
+#include "Game.h"
+
 int main() {
-	cout << "Emir";
-	return 0;
+	srand(time(NULL)); //Rand fonksiyonunu her seferinde rastgele olmasini saglar
+	Game game;
+	while (game.getPlaying())
+	{
+		game.mainMenu();
+
+	}
 }
