@@ -1,6 +1,3 @@
-﻿  Character.cpp
-  Game.cpp
-  main.cpp
+﻿  main.cpp
 D:\repositories\Console-RPG-GAME\Console-RPG-GAME\main.cpp(5,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
   Console-RPG-GAME.vcxproj -> D:\repositories\Console-RPG-GAME\x64\Debug\Console-RPG-GAME.exe

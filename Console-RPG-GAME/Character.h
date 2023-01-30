@@ -1,5 +1,5 @@
 #pragma once
-#include <string>
+#include "Inventory.h"
 class Character
 {
 public:
@@ -9,13 +9,15 @@ public:
 	//Operations Operasyonlar
 
 	//Functions Fonksiyonlar
-	void initialize(int level, std::string name);
+	void initialize(const std::string name);
+	void printStats() const;
+	void lvlUp();
 	//Accessors aksesuarlar
 	inline const double& getX() const { return this->xPos; }
 	inline const double& getY() const { return this->yPos; }
 
 	inline const std::string& getName() const { return this->name; }
-	inline const int& getLevel() const { return this->lvl; }
+	inline const int& getLevel() const { return this->level; }
 	inline const int& getExp() const { return this->exp; }
 	inline const int& getExpNext() const { return this->expNext; }
 
@@ -35,18 +37,27 @@ private:
 	double yPos;
 
 	std::string name;
-	int lvl;
+	int level;
 	int exp;
 	int expNext;
+
+
+	int strenght;
+	int vitality;
+	int dexterity;
+	int intelligence;
 
 	int hp;
 	int hpMax;
 	int stamina;
-
+	int staminaMax;
 	int minDamage;
 	int maxDamage;
 	int defance;
+	int luck;
 
+	int statePoints;
+	int skillPoints;
 
 
 };
